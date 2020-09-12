@@ -1,0 +1,3 @@
+[submodule "Metacritic-Python-API"]
+	path = Metacritic-Python-API
+	url = https://github.com/quantum-pie/Metacritic-Python-API
