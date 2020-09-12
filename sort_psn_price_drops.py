@@ -5,6 +5,7 @@ sys.path.insert(0, './Metacritic-Python-API')
 
 import argparse
 import csv
+import time
 
 from gameprices.shops import psn
 from MetaCriticScraper import MetaCriticScraper
