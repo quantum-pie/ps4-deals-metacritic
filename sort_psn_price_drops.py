@@ -76,6 +76,10 @@ def get_metacritic_ratings(games):
         metacritic_game_url = "https://www.metacritic.com/" + first_result_li + "?ref=hp"
         scraper = MetaCriticScraper(metacritic_game_url)
 
+        if "japan" in scraper.game['genre'].lower():
+            print("I don't wanna play this")
+            continue
+
         if scraper.game['critic_score']:
             critic_score = int(scraper.game['critic_score'])
         else:
